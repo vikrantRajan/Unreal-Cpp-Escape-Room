@@ -1,0 +1,11 @@
+{
+	"files.exclude": {
+		"/Users/vikrant_rajan/Documents/Unreal Projects/EscapeUnreal/Saved": true,
+		"/Users/vikrant_rajan/Documents/Unreal Projects/EscapeUnreal/Content": true,
+		"/Users/vikrant_rajan/Documents/Unreal Projects/EscapeUnreal/DerivedDataCache": true,
+		"/Users/vikrant_rajan/Documents/Unreal Projects/EscapeUnreal/EscapeUnreal.xcworkspace": true,
+		"/Users/vikrant_rajan/Documents/Unreal Projects/EscapeUnreal/.git": true,
+		"/Users/vikrant_rajan/Documents/Unreal Projects/EscapeUnreal/.vscode": true,
+		"/Users/vikrant_rajan/Documents/Unreal Projects/EscapeUnreal/Intermediate": true
+	}
+}

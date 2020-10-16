@@ -1,0 +1,104 @@
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"name": "EscapeUnreal (Debug)",
+			"request": "launch",
+			"preLaunchTask": "EscapeUnreal Mac Debug Build",
+			"program": "/Users/vikrant_rajan/Documents/Unreal Projects/EscapeUnreal/Binaries/Mac/UE4-Mac-Debug.app/Contents/MacOS/UE4-Mac-Debug",
+			"args": [
+			],
+			"cwd": "/Users/vikrant_rajan/Documents/Unreal/Unreal_System_Files/UE_4.25",
+			"type": "lldb"
+		},
+		{
+			"name": "EscapeUnreal (DebugGame)",
+			"request": "launch",
+			"preLaunchTask": "EscapeUnreal Mac DebugGame Build",
+			"program": "/Users/vikrant_rajan/Documents/Unreal Projects/EscapeUnreal/Binaries/Mac/UE4-Mac-DebugGame.app/Contents/MacOS/UE4-Mac-DebugGame",
+			"args": [
+			],
+			"cwd": "/Users/vikrant_rajan/Documents/Unreal/Unreal_System_Files/UE_4.25",
+			"type": "lldb"
+		},
+		{
+			"name": "EscapeUnreal (Development)",
+			"request": "launch",
+			"preLaunchTask": "EscapeUnreal Mac Development Build",
+			"program": "/Users/vikrant_rajan/Documents/Unreal Projects/EscapeUnreal/Binaries/Mac/UE4.app/Contents/MacOS/UE4",
+			"args": [
+			],
+			"cwd": "/Users/vikrant_rajan/Documents/Unreal/Unreal_System_Files/UE_4.25",
+			"type": "lldb"
+		},
+		{
+			"name": "EscapeUnreal (Shipping)",
+			"request": "launch",
+			"preLaunchTask": "EscapeUnreal Mac Shipping Build",
+			"program": "/Users/vikrant_rajan/Documents/Unreal Projects/EscapeUnreal/Binaries/Mac/UE4-Mac-Shipping.app/Contents/MacOS/UE4-Mac-Shipping",
+			"args": [
+			],
+			"cwd": "/Users/vikrant_rajan/Documents/Unreal/Unreal_System_Files/UE_4.25",
+			"type": "lldb"
+		},
+		{
+			"name": "EscapeUnreal (Test)",
+			"request": "launch",
+			"preLaunchTask": "EscapeUnreal Mac Test Build",
+			"program": "/Users/vikrant_rajan/Documents/Unreal Projects/EscapeUnreal/Binaries/Mac/UE4-Mac-Test.app/Contents/MacOS/UE4-Mac-Test",
+			"args": [
+			],
+			"cwd": "/Users/vikrant_rajan/Documents/Unreal/Unreal_System_Files/UE_4.25",
+			"type": "lldb"
+		},
+		{
+			"name": "EscapeUnrealEditor (Debug)",
+			"request": "launch",
+			"preLaunchTask": "EscapeUnrealEditor Mac Debug Build",
+			"program": "/Users/vikrant_rajan/Documents/Unreal/Unreal_System_Files/UE_4.25/Engine/Binaries/Mac/UE4Editor-Mac-Debug.app/Contents/MacOS/UE4Editor-Mac-Debug",
+			"args": [
+				"/Users/vikrant_rajan/Documents/Unreal Projects/EscapeUnreal/EscapeUnreal.uproject"
+			],
+			"cwd": "/Users/vikrant_rajan/Documents/Unreal/Unreal_System_Files/UE_4.25",
+			"type": "lldb"
+		},
+		{
+			"name": "EscapeUnrealEditor (DebugGame)",
+			"request": "launch",
+			"preLaunchTask": "EscapeUnrealEditor Mac DebugGame Build",
+			"program": "/Users/vikrant_rajan/Documents/Unreal/Unreal_System_Files/UE_4.25/Engine/Binaries/Mac/UE4Editor-Mac-DebugGame.app/Contents/MacOS/UE4Editor-Mac-DebugGame",
+			"args": [
+				"/Users/vikrant_rajan/Documents/Unreal Projects/EscapeUnreal/EscapeUnreal.uproject"
+			],
+			"cwd": "/Users/vikrant_rajan/Documents/Unreal/Unreal_System_Files/UE_4.25",
+			"type": "lldb"
+		},
+		{
+			"name": "EscapeUnrealEditor (Development)",
+			"request": "launch",
+			"preLaunchTask": "EscapeUnrealEditor Mac Development Build",
+			"program": "/Users/vikrant_rajan/Documents/Unreal/Unreal_System_Files/UE_4.25/Engine/Binaries/Mac/UE4Editor.app/Contents/MacOS/UE4Editor",
+			"args": [
+				"/Users/vikrant_rajan/Documents/Unreal Projects/EscapeUnreal/EscapeUnreal.uproject"
+			],
+			"cwd": "/Users/vikrant_rajan/Documents/Unreal/Unreal_System_Files/UE_4.25",
+			"type": "lldb"
+		},
+		{
+			"name": "Generate Project Files",
+			"type": "mono",
+			"request": "launch",
+			"program": "/Users/vikrant_rajan/Documents/Unreal/Unreal_System_Files/UE_4.25/Engine/Binaries/DotNET/UnrealBuildTool.exe",
+			"console": "internalConsole",
+			"args": [
+				"-projectfiles",
+				"-vscode",
+				"-project=\"/Users/vikrant_rajan/Documents/Unreal Projects/EscapeUnreal/EscapeUnreal.uproject\"",
+				"-game",
+				"-engine"
+			],
+			"internalConsoleOptions": "openOnSessionStart",
+			"cwd": "/Users/vikrant_rajan/Documents/Unreal/Unreal_System_Files/UE_4.25"
+		}
+	]
+}

@@ -1,0 +1,720 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "EscapeUnreal Mac Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"EscapeUnreal",
+				"Mac",
+				"Debug",
+				"/Users/vikrant_rajan/Documents/Unreal Projects/EscapeUnreal/EscapeUnreal.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/vikrant_rajan/Documents/Unreal/Unreal_System_Files/UE_4.25"
+			}
+		},
+		{
+			"label": "EscapeUnreal Mac Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"EscapeUnreal",
+				"Mac",
+				"Debug",
+				"/Users/vikrant_rajan/Documents/Unreal Projects/EscapeUnreal/EscapeUnreal.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"EscapeUnreal Mac Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/vikrant_rajan/Documents/Unreal/Unreal_System_Files/UE_4.25"
+			}
+		},
+		{
+			"label": "EscapeUnreal Mac Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"EscapeUnreal",
+				"Mac",
+				"Debug",
+				"/Users/vikrant_rajan/Documents/Unreal Projects/EscapeUnreal/EscapeUnreal.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/vikrant_rajan/Documents/Unreal/Unreal_System_Files/UE_4.25"
+			}
+		},
+		{
+			"label": "EscapeUnreal Mac DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"EscapeUnreal",
+				"Mac",
+				"DebugGame",
+				"/Users/vikrant_rajan/Documents/Unreal Projects/EscapeUnreal/EscapeUnreal.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/vikrant_rajan/Documents/Unreal/Unreal_System_Files/UE_4.25"
+			}
+		},
+		{
+			"label": "EscapeUnreal Mac DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"EscapeUnreal",
+				"Mac",
+				"DebugGame",
+				"/Users/vikrant_rajan/Documents/Unreal Projects/EscapeUnreal/EscapeUnreal.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"EscapeUnreal Mac DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/vikrant_rajan/Documents/Unreal/Unreal_System_Files/UE_4.25"
+			}
+		},
+		{
+			"label": "EscapeUnreal Mac DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"EscapeUnreal",
+				"Mac",
+				"DebugGame",
+				"/Users/vikrant_rajan/Documents/Unreal Projects/EscapeUnreal/EscapeUnreal.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/vikrant_rajan/Documents/Unreal/Unreal_System_Files/UE_4.25"
+			}
+		},
+		{
+			"label": "EscapeUnreal Mac Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"EscapeUnreal",
+				"Mac",
+				"Development",
+				"/Users/vikrant_rajan/Documents/Unreal Projects/EscapeUnreal/EscapeUnreal.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/vikrant_rajan/Documents/Unreal/Unreal_System_Files/UE_4.25"
+			}
+		},
+		{
+			"label": "EscapeUnreal Mac Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"EscapeUnreal",
+				"Mac",
+				"Development",
+				"/Users/vikrant_rajan/Documents/Unreal Projects/EscapeUnreal/EscapeUnreal.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"EscapeUnreal Mac Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/vikrant_rajan/Documents/Unreal/Unreal_System_Files/UE_4.25"
+			}
+		},
+		{
+			"label": "EscapeUnreal Mac Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"EscapeUnreal",
+				"Mac",
+				"Development",
+				"/Users/vikrant_rajan/Documents/Unreal Projects/EscapeUnreal/EscapeUnreal.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/vikrant_rajan/Documents/Unreal/Unreal_System_Files/UE_4.25"
+			}
+		},
+		{
+			"label": "EscapeUnreal Mac Shipping Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"EscapeUnreal",
+				"Mac",
+				"Shipping",
+				"/Users/vikrant_rajan/Documents/Unreal Projects/EscapeUnreal/EscapeUnreal.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/vikrant_rajan/Documents/Unreal/Unreal_System_Files/UE_4.25"
+			}
+		},
+		{
+			"label": "EscapeUnreal Mac Shipping Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"EscapeUnreal",
+				"Mac",
+				"Shipping",
+				"/Users/vikrant_rajan/Documents/Unreal Projects/EscapeUnreal/EscapeUnreal.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"EscapeUnreal Mac Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/vikrant_rajan/Documents/Unreal/Unreal_System_Files/UE_4.25"
+			}
+		},
+		{
+			"label": "EscapeUnreal Mac Shipping Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"EscapeUnreal",
+				"Mac",
+				"Shipping",
+				"/Users/vikrant_rajan/Documents/Unreal Projects/EscapeUnreal/EscapeUnreal.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/vikrant_rajan/Documents/Unreal/Unreal_System_Files/UE_4.25"
+			}
+		},
+		{
+			"label": "EscapeUnreal Mac Test Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"EscapeUnreal",
+				"Mac",
+				"Test",
+				"/Users/vikrant_rajan/Documents/Unreal Projects/EscapeUnreal/EscapeUnreal.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/vikrant_rajan/Documents/Unreal/Unreal_System_Files/UE_4.25"
+			}
+		},
+		{
+			"label": "EscapeUnreal Mac Test Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"EscapeUnreal",
+				"Mac",
+				"Test",
+				"/Users/vikrant_rajan/Documents/Unreal Projects/EscapeUnreal/EscapeUnreal.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"EscapeUnreal Mac Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/vikrant_rajan/Documents/Unreal/Unreal_System_Files/UE_4.25"
+			}
+		},
+		{
+			"label": "EscapeUnreal Mac Test Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"EscapeUnreal",
+				"Mac",
+				"Test",
+				"/Users/vikrant_rajan/Documents/Unreal Projects/EscapeUnreal/EscapeUnreal.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/vikrant_rajan/Documents/Unreal/Unreal_System_Files/UE_4.25"
+			}
+		},
+		{
+			"label": "EscapeUnreal IOS Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"EscapeUnreal",
+				"IOS",
+				"Debug",
+				"/Users/vikrant_rajan/Documents/Unreal Projects/EscapeUnreal/EscapeUnreal.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/vikrant_rajan/Documents/Unreal/Unreal_System_Files/UE_4.25"
+			}
+		},
+		{
+			"label": "EscapeUnreal IOS Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"EscapeUnreal",
+				"IOS",
+				"Debug",
+				"/Users/vikrant_rajan/Documents/Unreal Projects/EscapeUnreal/EscapeUnreal.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"EscapeUnreal IOS Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/vikrant_rajan/Documents/Unreal/Unreal_System_Files/UE_4.25"
+			}
+		},
+		{
+			"label": "EscapeUnreal IOS Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"EscapeUnreal",
+				"IOS",
+				"Debug",
+				"/Users/vikrant_rajan/Documents/Unreal Projects/EscapeUnreal/EscapeUnreal.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/vikrant_rajan/Documents/Unreal/Unreal_System_Files/UE_4.25"
+			}
+		},
+		{
+			"label": "EscapeUnreal IOS DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"EscapeUnreal",
+				"IOS",
+				"DebugGame",
+				"/Users/vikrant_rajan/Documents/Unreal Projects/EscapeUnreal/EscapeUnreal.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/vikrant_rajan/Documents/Unreal/Unreal_System_Files/UE_4.25"
+			}
+		},
+		{
+			"label": "EscapeUnreal IOS DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"EscapeUnreal",
+				"IOS",
+				"DebugGame",
+				"/Users/vikrant_rajan/Documents/Unreal Projects/EscapeUnreal/EscapeUnreal.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"EscapeUnreal IOS DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/vikrant_rajan/Documents/Unreal/Unreal_System_Files/UE_4.25"
+			}
+		},
+		{
+			"label": "EscapeUnreal IOS DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"EscapeUnreal",
+				"IOS",
+				"DebugGame",
+				"/Users/vikrant_rajan/Documents/Unreal Projects/EscapeUnreal/EscapeUnreal.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/vikrant_rajan/Documents/Unreal/Unreal_System_Files/UE_4.25"
+			}
+		},
+		{
+			"label": "EscapeUnreal IOS Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"EscapeUnreal",
+				"IOS",
+				"Development",
+				"/Users/vikrant_rajan/Documents/Unreal Projects/EscapeUnreal/EscapeUnreal.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/vikrant_rajan/Documents/Unreal/Unreal_System_Files/UE_4.25"
+			}
+		},
+		{
+			"label": "EscapeUnreal IOS Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"EscapeUnreal",
+				"IOS",
+				"Development",
+				"/Users/vikrant_rajan/Documents/Unreal Projects/EscapeUnreal/EscapeUnreal.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"EscapeUnreal IOS Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/vikrant_rajan/Documents/Unreal/Unreal_System_Files/UE_4.25"
+			}
+		},
+		{
+			"label": "EscapeUnreal IOS Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"EscapeUnreal",
+				"IOS",
+				"Development",
+				"/Users/vikrant_rajan/Documents/Unreal Projects/EscapeUnreal/EscapeUnreal.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/vikrant_rajan/Documents/Unreal/Unreal_System_Files/UE_4.25"
+			}
+		},
+		{
+			"label": "EscapeUnreal IOS Shipping Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"EscapeUnreal",
+				"IOS",
+				"Shipping",
+				"/Users/vikrant_rajan/Documents/Unreal Projects/EscapeUnreal/EscapeUnreal.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/vikrant_rajan/Documents/Unreal/Unreal_System_Files/UE_4.25"
+			}
+		},
+		{
+			"label": "EscapeUnreal IOS Shipping Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"EscapeUnreal",
+				"IOS",
+				"Shipping",
+				"/Users/vikrant_rajan/Documents/Unreal Projects/EscapeUnreal/EscapeUnreal.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"EscapeUnreal IOS Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/vikrant_rajan/Documents/Unreal/Unreal_System_Files/UE_4.25"
+			}
+		},
+		{
+			"label": "EscapeUnreal IOS Shipping Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"EscapeUnreal",
+				"IOS",
+				"Shipping",
+				"/Users/vikrant_rajan/Documents/Unreal Projects/EscapeUnreal/EscapeUnreal.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/vikrant_rajan/Documents/Unreal/Unreal_System_Files/UE_4.25"
+			}
+		},
+		{
+			"label": "EscapeUnreal IOS Test Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"EscapeUnreal",
+				"IOS",
+				"Test",
+				"/Users/vikrant_rajan/Documents/Unreal Projects/EscapeUnreal/EscapeUnreal.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/vikrant_rajan/Documents/Unreal/Unreal_System_Files/UE_4.25"
+			}
+		},
+		{
+			"label": "EscapeUnreal IOS Test Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"EscapeUnreal",
+				"IOS",
+				"Test",
+				"/Users/vikrant_rajan/Documents/Unreal Projects/EscapeUnreal/EscapeUnreal.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"EscapeUnreal IOS Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/vikrant_rajan/Documents/Unreal/Unreal_System_Files/UE_4.25"
+			}
+		},
+		{
+			"label": "EscapeUnreal IOS Test Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"EscapeUnreal",
+				"IOS",
+				"Test",
+				"/Users/vikrant_rajan/Documents/Unreal Projects/EscapeUnreal/EscapeUnreal.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/vikrant_rajan/Documents/Unreal/Unreal_System_Files/UE_4.25"
+			}
+		},
+		{
+			"label": "EscapeUnrealEditor Mac Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"EscapeUnrealEditor",
+				"Mac",
+				"Debug",
+				"/Users/vikrant_rajan/Documents/Unreal Projects/EscapeUnreal/EscapeUnreal.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/vikrant_rajan/Documents/Unreal/Unreal_System_Files/UE_4.25"
+			}
+		},
+		{
+			"label": "EscapeUnrealEditor Mac Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"EscapeUnrealEditor",
+				"Mac",
+				"Debug",
+				"/Users/vikrant_rajan/Documents/Unreal Projects/EscapeUnreal/EscapeUnreal.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"EscapeUnrealEditor Mac Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/vikrant_rajan/Documents/Unreal/Unreal_System_Files/UE_4.25"
+			}
+		},
+		{
+			"label": "EscapeUnrealEditor Mac Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"EscapeUnrealEditor",
+				"Mac",
+				"Debug",
+				"/Users/vikrant_rajan/Documents/Unreal Projects/EscapeUnreal/EscapeUnreal.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/vikrant_rajan/Documents/Unreal/Unreal_System_Files/UE_4.25"
+			}
+		},
+		{
+			"label": "EscapeUnrealEditor Mac DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"EscapeUnrealEditor",
+				"Mac",
+				"DebugGame",
+				"/Users/vikrant_rajan/Documents/Unreal Projects/EscapeUnreal/EscapeUnreal.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/vikrant_rajan/Documents/Unreal/Unreal_System_Files/UE_4.25"
+			}
+		},
+		{
+			"label": "EscapeUnrealEditor Mac DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"EscapeUnrealEditor",
+				"Mac",
+				"DebugGame",
+				"/Users/vikrant_rajan/Documents/Unreal Projects/EscapeUnreal/EscapeUnreal.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"EscapeUnrealEditor Mac DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/vikrant_rajan/Documents/Unreal/Unreal_System_Files/UE_4.25"
+			}
+		},
+		{
+			"label": "EscapeUnrealEditor Mac DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"EscapeUnrealEditor",
+				"Mac",
+				"DebugGame",
+				"/Users/vikrant_rajan/Documents/Unreal Projects/EscapeUnreal/EscapeUnreal.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/vikrant_rajan/Documents/Unreal/Unreal_System_Files/UE_4.25"
+			}
+		},
+		{
+			"label": "EscapeUnrealEditor Mac Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"EscapeUnrealEditor",
+				"Mac",
+				"Development",
+				"/Users/vikrant_rajan/Documents/Unreal Projects/EscapeUnreal/EscapeUnreal.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/vikrant_rajan/Documents/Unreal/Unreal_System_Files/UE_4.25"
+			}
+		},
+		{
+			"label": "EscapeUnrealEditor Mac Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"EscapeUnrealEditor",
+				"Mac",
+				"Development",
+				"/Users/vikrant_rajan/Documents/Unreal Projects/EscapeUnreal/EscapeUnreal.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"EscapeUnrealEditor Mac Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/vikrant_rajan/Documents/Unreal/Unreal_System_Files/UE_4.25"
+			}
+		},
+		{
+			"label": "EscapeUnrealEditor Mac Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"EscapeUnrealEditor",
+				"Mac",
+				"Development",
+				"/Users/vikrant_rajan/Documents/Unreal Projects/EscapeUnreal/EscapeUnreal.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/vikrant_rajan/Documents/Unreal/Unreal_System_Files/UE_4.25"
+			}
+		}
+	]
+}
